@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fc5928"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="60dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+
+                android:id="@+id/textView1"
+                android:onClick="cameraClick"
+                android:paddingTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#ffffff"
+                android:background="#f27e26"
+                android:text="CLICK PICTURE"/>
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:onClick="cameraClick"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                app:srcCompat="@drawable/a3901"
+                android:paddingTop="10dp"
+                android:paddingBottom="20dp"
+                android:background="#f27e26"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_below="@+id/textView1"/>
+
+            <TextView
+                android:id="@+id/textView2"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:paddingBottom="5dp"
+                android:textSize="20sp"
+                android:textColor="#ffffff"
+                android:paddingTop="10dp"
+                android:background="#fc5928"
+                android:text="RECORD VIDEO"
+                android:layout_below="@+id/imageView1"/>
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:onClick="videoClick"
+                android:layout_width="wrap_content"
+                android:layout_height="120dp"
+                app:srcCompat="@drawable/a34099"
+                tools:layout_editor_absoluteX="66dp"
+                tools:layout_editor_absoluteY="64dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="20dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_below="@+id/textView2"/>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:paddingTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:background="#f27e26"
+                android:textSize="20sp"
+                android:textColor="#ffffff"
+                android:text="RECORD AUDIO"
+                android:layout_below="@+id/imageView2"/>
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:background="#f27e26"
+                android:onClick="recordClick"
+                android:layout_width="wrap_content"
+                android:layout_height="120dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="20dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:srcCompat="@drawable/microphone_512"
+                android:layout_below="@+id/textView3"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:onClick="playClick"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:background="#5600ad"
+        android:text="SHOW MY RECORDING"
+        android:layout_alignParentBottom="true"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:textStyle="bold" />
+
+</RelativeLayout>
